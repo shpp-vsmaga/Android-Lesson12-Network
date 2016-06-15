@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Online Notepad</string>
+    <string name="action_settings">DB to console</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="connUnavailable">Connection unavailable</string>
+</resources>

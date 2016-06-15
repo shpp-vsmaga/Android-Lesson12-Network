@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shpp.sv.online_notepad.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <fragment
+        android:name="com.shpp.sv.online_notepad.NotesListFragment"
+        android:id="@+id/frgNotesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        tools:layout="@layout/fragment_notes_list"
+        >
+    </fragment>
+
+    <fragment
+        android:name="com.shpp.sv.online_notepad.EditNoteFragment"
+        android:id="@+id/frgEditeNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        tools:layout="@layout/fragment_edit_note">
+    </fragment>
+</LinearLayout>
